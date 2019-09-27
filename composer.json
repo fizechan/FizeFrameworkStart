@@ -2,6 +2,7 @@
     "name": "fize/framework-start",
     "description": "使用Fize框架的入口实例。",
     "type": "project",
+    "license": "Apache-2.0",
     "authors": [
         {
             "name": "FizeChan",
