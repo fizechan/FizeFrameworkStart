@@ -1,0 +1,24 @@
+{
+    "name": "fize/framework-start",
+    "description": "使用Fize框架的入口实例。",
+    "type": "project",
+    "authors": [
+        {
+            "name": "FizeChan",
+            "email": "chenfengzhan@qq.com"
+        }
+    ],
+    "require": {
+		"php": ">=7.0.0",
+        "fize/framework": "*@dev"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8.0.0",
+        "twig/twig": ">=2.11.0"
+    },
+	"autoload": {
+        "psr-4": {
+            "app\\": "app"
+        }
+    }
+}
