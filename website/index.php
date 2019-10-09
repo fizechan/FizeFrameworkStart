@@ -11,4 +11,5 @@ $app->run();
 //    'root_path' => dirname(dirname(__FILE__))
 //];
 //
-//new App($config);
+//$app = new App($config);
+//$app->run();

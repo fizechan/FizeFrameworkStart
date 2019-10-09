@@ -21,9 +21,11 @@ class Index extends Controller
 
     public function config()
     {
-        //todo 测试发现Config读取配置时返回值不正确
-        $config = Config::get('app');
-        var_dump($config);
+        $cfg_app = Config::get('app');
+        var_dump($cfg_app);
+
+        $cfg_db = Config::get('db');
+        var_dump($cfg_db);
     }
 
     public function view()
