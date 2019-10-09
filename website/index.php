@@ -4,7 +4,8 @@ namespace fize\framework;
 
 require __DIR__ . '/../vendor/autoload.php';
 
-new App();
+$app = new App();
+$app->run();
 
 //$config = [
 //    'root_path' => dirname(dirname(__FILE__))

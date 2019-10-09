@@ -1,7 +1,7 @@
 <?php
 
 
-namespace app\index\controller;
+namespace app\admin\controller;
 
 use fize\framework\Controller;
 use fize\framework\Config;
@@ -15,17 +15,13 @@ class Index extends Controller
 
     public function index()
     {
-        $pathinfo = Request::server('PATH_INFO');
-        var_dump($pathinfo);
-        $server = Request::server();
-        var_dump($server);
-        $value1 = Request::get('key1');
-        var_dump($value1);
-        echo 'Hello FizeFramework';
+        echo "<h1>Hello FizeFramework.</h1>\r\n<br/>";
+        echo "<p>The Controller now is \"admin/Index/index\".</p>\r\n<br/>";
     }
 
     public function config()
     {
+        //todo 测试发现Config读取配置时返回值不正确
         $config = Config::get('app');
         var_dump($config);
     }
