@@ -4,10 +4,7 @@
 namespace app\index\controller;
 
 use fize\framework\Controller;
-use fize\framework\Config;
 use fize\framework\View;
-use fize\framework\Response;
-use fize\framework\Request;
 
 
 class Index extends Controller
@@ -15,44 +12,8 @@ class Index extends Controller
 
     public function index()
     {
-        $pathinfo = Request::server('PATH_INFO');
-        var_dump($pathinfo);
-        $server = Request::server();
-        var_dump($server);
-        $value1 = Request::get('key1');
-        var_dump($value1);
-        echo 'Hello FizeFramework';
-    }
-
-    public function config()
-    {
-        $config = Config::get('app');
-        var_dump($config);
-    }
-
-    public function view()
-    {
-        View::assign('fize', ['name' => '陈峰展', 'mobile' => '14759786559']);
-
-        $rows = [
-            ['id' => 0, 'name' => '陈峰展1'],
-            ['id' => 1, 'name' => '陈峰展2'],
-            ['id' => 2, 'name' => '陈峰展3'],
-            ['id' => 3, 'name' => '陈峰展4'],
-        ];
-        View::assign('rows', $rows);
-        //return View::render();  //字符串
-        return Response::html(View::render());
-    }
-
-    public function json()
-    {
-        $rows = [
-            ['id' => 0, 'name' => '陈峰展1'],
-            ['id' => 1, 'name' => '陈峰展2'],
-            ['id' => 2, 'name' => '陈峰展3'],
-            ['id' => 3, 'name' => '陈峰展4'],
-        ];
-        return Response::json($rows);
+        View::assign('title', 'Hello FizeFramework.');
+        View::assign('body', 'This is a Demo for FizeFramework.');
+        return View::render();
     }
 }
