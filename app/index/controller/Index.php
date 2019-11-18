@@ -4,7 +4,7 @@
 namespace app\index\controller;
 
 use fize\framework\Controller;
-use fize\framework\View;
+use fize\view\View;
 
 
 class Index extends Controller

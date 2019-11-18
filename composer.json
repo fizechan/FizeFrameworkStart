@@ -11,7 +11,7 @@
     ],
     "require": {
 		"php": ">=7.0.0",
-        "fize/framework": "~0.3"
+        "fize/framework": "~0.4"
     },
 	"autoload": {
         "psr-4": {
