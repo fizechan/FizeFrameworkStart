@@ -2,7 +2,7 @@
     "name": "fize/framework-start",
     "description": "使用Fize框架的示例。",
     "type": "project",
-    "license": "Apache-2.0",
+    "license": "MIT",
     "authors": [
         {
             "name": "FizeChan",
@@ -11,7 +11,7 @@
     ],
     "require": {
 		"php": ">=7.0.0",
-        "fize/framework": "~0.4"
+        "fize/framework": "~0.5"
     },
 	"autoload": {
         "psr-4": {
