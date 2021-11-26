@@ -9,13 +9,13 @@
             "email": "chenfengzhan@qq.com"
         }
     ],
-    "require": {
-		"php": ">=7.0.0",
-        "fize/framework": "~0.5"
-    },
-	"autoload": {
+    "autoload": {
         "psr-4": {
             "app\\": "app"
         }
+    },
+    "require": {
+		"php": ">=7.0.0",
+        "fize/framework": "^1.0.1"
     }
 }
