@@ -11,11 +11,11 @@
     ],
     "autoload": {
         "psr-4": {
-            "app\\": "app"
+            "App\\": "app"
         }
     },
     "require": {
 		"php": ">=7.0.0",
-        "fize/framework": "^1.0.1"
+        "fize/framework": "*"
     }
 }
