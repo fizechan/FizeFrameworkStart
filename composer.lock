@@ -113,23 +113,24 @@
         },
         {
             "name": "fize/database",
-            "version": "4.0.0",
+            "version": "4.0.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/fizechan/FizeDatabase.git",
-                "reference": "a6a60e4aa7643143510bce6db5ddca4db15ff8b4"
+                "reference": "a6a019c9ced8928142ee71de16ef91dee17afe9e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fizechan/FizeDatabase/zipball/a6a60e4aa7643143510bce6db5ddca4db15ff8b4",
-                "reference": "a6a60e4aa7643143510bce6db5ddca4db15ff8b4",
+                "url": "https://api.github.com/repos/fizechan/FizeDatabase/zipball/a6a019c9ced8928142ee71de16ef91dee17afe9e",
+                "reference": "a6a019c9ced8928142ee71de16ef91dee17afe9e",
                 "shasum": ""
             },
             "require": {
+                "fize/exception": "*",
                 "php": ">=7.1.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "^9.5.0"
+                "phpunit/phpunit": "*"
             },
             "suggest": {
                 "ext-com_dotnet": "*",
@@ -168,9 +169,56 @@
             "description": "一个全功能的，易于扩展的数据库类、ORM类。",
             "support": {
                 "issues": "https://github.com/fizechan/FizeDatabase/issues",
-                "source": "https://github.com/fizechan/FizeDatabase/tree/4.0.0"
+                "source": "https://github.com/fizechan/FizeDatabase/tree/4.0.7"
             },
-            "time": "2021-11-26T06:29:28+00:00"
+            "time": "2026-06-15T11:09:03+00:00"
+        },
+        {
+            "name": "fize/exception",
+            "version": "3.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/fizechan/FizeException.git",
+                "reference": "2b64945ebe1e019cc3205fbd470a0d7d332fff48"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/fizechan/FizeException/zipball/2b64945ebe1e019cc3205fbd470a0d7d332fff48",
+                "reference": "2b64945ebe1e019cc3205fbd470a0d7d332fff48",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1.0"
+            },
+            "require-dev": {
+                "fize/http": "*",
+                "phpunit/phpunit": "^9.6.34"
+            },
+            "suggest": {
+                "fize/http": "For using the HttpException class."
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Fize\\Exception\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "FizeChan",
+                    "email": "chenfengzhan@qq.com"
+                }
+            ],
+            "description": "异常定义类库。",
+            "support": {
+                "issues": "https://github.com/fizechan/FizeException/issues",
+                "source": "https://github.com/fizechan/FizeException/tree/3.5.0"
+            },
+            "time": "2026-06-15T11:03:33+00:00"
         },
         {
             "name": "fize/framework",
@@ -433,33 +481,33 @@
         },
         {
             "name": "fize/session",
-            "version": "5.0.0",
+            "version": "5.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/fizechan/FizeSession.git",
-                "reference": "f1a39485a721112f587ad2c3d8762b1ed6763865"
+                "reference": "eff669c098205f04bb713a92d9322ee388cd6e0c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fizechan/FizeSession/zipball/f1a39485a721112f587ad2c3d8762b1ed6763865",
-                "reference": "f1a39485a721112f587ad2c3d8762b1ed6763865",
+                "url": "https://api.github.com/repos/fizechan/FizeSession/zipball/eff669c098205f04bb713a92d9322ee388cd6e0c",
+                "reference": "eff669c098205f04bb713a92d9322ee388cd6e0c",
                 "shasum": ""
             },
             "require": {
                 "php": ">=7.1.0"
             },
             "require-dev": {
-                "fize/database": "^4.0.0",
-                "fize/io": "^6.0.0",
-                "guzzlehttp/guzzle": "^6.5.0",
-                "phpunit/phpunit": "^9.5.0"
+                "fize/database": "*",
+                "fize/io": "*",
+                "guzzlehttp/guzzle": "*",
+                "phpunit/phpunit": "*"
             },
             "suggest": {
                 "ext-memcache": "*",
                 "ext-memcached": "*",
                 "ext-redis": "*",
-                "fize/database": "^4.0.0",
-                "fize/io": "^6.0.0",
+                "fize/database": "*",
+                "fize/io": "*",
                 "php": ">=7.2.0"
             },
             "type": "library",
@@ -481,9 +529,9 @@
             "description": "Session 底层管理类库",
             "support": {
                 "issues": "https://github.com/fizechan/FizeSession/issues",
-                "source": "https://github.com/fizechan/FizeSession/tree/5.0.0"
+                "source": "https://github.com/fizechan/FizeSession/tree/5.0.4"
             },
-            "time": "2021-11-26T08:49:25+00:00"
+            "time": "2026-06-15T07:56:39+00:00"
         },
         {
             "name": "fize/stream",
@@ -532,20 +580,20 @@
         },
         {
             "name": "fize/view",
-            "version": "3.0.0",
+            "version": "3.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/fizechan/FizeView.git",
-                "reference": "574865121400bdf49b12f23646d52c8c373787d1"
+                "reference": "716c0f70f8ef28030509037b13d651fe3af571b2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fizechan/FizeView/zipball/574865121400bdf49b12f23646d52c8c373787d1",
-                "reference": "574865121400bdf49b12f23646d52c8c373787d1",
+                "url": "https://api.github.com/repos/fizechan/FizeView/zipball/716c0f70f8ef28030509037b13d651fe3af571b2",
+                "reference": "716c0f70f8ef28030509037b13d651fe3af571b2",
                 "shasum": ""
             },
             "require": {
-                "php": ">=7.0.0"
+                "php": ">=7.1.0"
             },
             "require-dev": {
                 "codeigniter4/framework": "^4.0.0",
@@ -554,7 +602,7 @@
                 "illuminate/view": "^7.8.0",
                 "laminas/laminas-servicemanager": "^3.4.0",
                 "laminas/laminas-view": "^2.11.0",
-                "latte/latte": "^3.0@dev",
+                "latte/latte": "^2.11.7",
                 "league/plates": "^4.0@alpha",
                 "liquid/liquid": "^1.4.0",
                 "mthaml/mthaml": "^1.8.0",
@@ -563,10 +611,10 @@
                 "phpunit/phpunit": "^9.5.0",
                 "pug-php/pug": "^3.4.0",
                 "rain/raintpl": "^3.1.0",
-                "smarty/smarty": "^3.1.0",
+                "smarty/smarty": "^5.3.0",
                 "tinybutstrong/tinybutstrong": "^3.11.0",
                 "topthink/think-template": "^2.0.0",
-                "twig/twig": "^3.0.0"
+                "twig/twig": "^3.11.1"
             },
             "type": "library",
             "autoload": {
@@ -587,9 +635,9 @@
             "description": "模板引擎框架，集结世面主流的模板引擎，想使用哪个模板引擎随便你。",
             "support": {
                 "issues": "https://github.com/fizechan/FizeView/issues",
-                "source": "https://github.com/fizechan/FizeView/tree/3.0.0"
+                "source": "https://github.com/fizechan/FizeView/tree/3.0.1"
             },
-            "time": "2021-11-26T09:17:48+00:00"
+            "time": "2026-06-15T08:21:53+00:00"
         },
         {
             "name": "fize/web",
